@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "type": "java",
+          "name": "Debug Spring Boot",
+          "request": "attach",
+          "hostName": "localhost",
+          "port": 5005,
+          "preLaunchTask": "Gradle bootRun with Debug",
+          "projectName": "demo",
+          "sourcePaths": [
+              "${workspaceFolder}/demo/src/main/java"
+          ]
+      },
+      {
+          "type": "chrome",
+          "name": "Debug Next.js Frontend",
+          "request": "launch",
+          "url": "http://localhost:3000",
+          "webRoot": "${workspaceFolder}/right-matching-app"
+      }
+  ],
+  "compounds": [
+      {
+          "name": "Full Stack Debug",
+          "configurations": ["Debug Spring Boot", "Debug Next.js Frontend"]
+      }
+  ]
+}

@@ -1,0 +1,7 @@
+[submodule "letter-know-backend"]
+	path = letter-know-backend
+	url = git@github.com:YOUNTAEHEE/letter-know-backend.git
+[submodule "letter-know-frontend"]
+	path = letter-know-frontend
+	url = git@github.com:YOUNTAEHEE/letter-know-frontend.git
+
